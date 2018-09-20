@@ -1,10 +1,7 @@
-@import "test/**/*";
-
-* {
-    background-color: black;
-}
-
-body {
-    width: 100vw;
-    height: 100vh;
-}
+@import "styles/settings.scss";
+@import "styles/tools.scss";
+@import "styles/generic.scss";
+@import "styles/base.scss";
+@import "styles/objects.scss";
+@import "styles/components.scss";
+@import "styles/trumps.scss";
