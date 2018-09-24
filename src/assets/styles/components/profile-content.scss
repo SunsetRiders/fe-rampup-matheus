@@ -1,0 +1,32 @@
+.profile-content {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+  > .firstcolumn {
+      
+    > .image {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+    }
+  }
+
+  > .secondcolumn {
+    width: 100%;
+  }  
+}
+
+
+@include respond-to('medium') {
+  .profile-content {
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    > .firstcolumn {
+      flex-direction: row;
+      margin: 0 5% 0 0;
+    }
+  }
+}

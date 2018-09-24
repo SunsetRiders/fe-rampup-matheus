@@ -1,0 +1,48 @@
+.information-box {
+  .-bold { font-weight: bold; }
+  .-upper { text-transform: uppercase; }
+  margin: 0 0 28px;
+
+  > .label {
+    @include font-size('small');
+    > .labelvacation {
+      @include font-size('small');
+      display: flex;
+      justify-content: center;
+      background: $second-color;
+      border-radius: 3px;
+      padding: 4px 5px;
+      width: 60px;
+      > p {
+        color: $second-font-color;
+      }
+    }
+  }
+
+  > .informationlabel {    
+    @include font-size('medium');
+    margin: 3px 0;
+    > p {
+      color: $thirdth-font-color;
+    }
+  }
+
+}
+
+@include respond-to('medium') {
+
+  .information-box {
+    display: flex;    
+    margin: 10px 0px;
+    width: 100%;
+
+    > .label {
+      width: 28%;
+    }
+
+    > .informationlabel {    
+      margin: 0;
+    }
+
+  }
+}

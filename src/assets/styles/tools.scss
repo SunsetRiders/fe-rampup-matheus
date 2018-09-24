@@ -1,5 +1,6 @@
-@function size($layer) {
-  @return map-get($breakpoints, $layer);
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
 }
 
 @mixin font-size($font) {

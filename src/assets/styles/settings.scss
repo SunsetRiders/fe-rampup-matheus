@@ -1,27 +1,27 @@
 @charset 'utf-8';
 
-$content-width: 100vw;
-$content-height: 100vh;
+// sizes.
+$page-width: 930px;
 
-$page-width: 1000px;
-
+// Background colors
 $main-color: #efefef;
 $second-color: #e8676b;
 
+// Font Styles
 $font-family: "Open Sans", sans-serif;
 $font-color: #3d4451;
 $second-font-color: #fff;
 $thirdth-font-color: #9da0a7;
-
 $font-sizes: (
   'small': 12px,
-  'small-medium': 14px,
+  's-medium': 14px,
   'medium': 15px,
   'large': 18px,
   'huge': 26px,
-  'extra-huge': 36px,
+  'x-huge': 36px,
 );
 
+// breakpoints
 $breakpoints: (
   'medium': (min-width: 800px),
   'large': (min-width: 1000px),
