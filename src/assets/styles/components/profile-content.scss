@@ -1,23 +1,12 @@
 .profile-content {
-    margin: 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-  > .firstcolumn {
-      
-    > .image {
-      display: flex;
-      align-self: center;
-      justify-content: center;
-    }
-  }
 
   > .secondcolumn {
     width: 100%;
   }  
 }
-
 
 @include respond-to('medium') {
   .profile-content {

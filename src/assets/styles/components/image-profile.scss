@@ -1,0 +1,9 @@
+.image-profile {
+  margin: 0 auto;
+  max-width: 390px;
+  
+  > .image {
+    width: 100%;
+    object-fit: contain;
+  }
+}
