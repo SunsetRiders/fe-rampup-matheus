@@ -1,35 +1,40 @@
 .information-box {
-  .-bold { font-weight: bold; }
-  .-upper { text-transform: uppercase; }
-  margin: 0 0 28px;
 
-  > .label {
-    @include font-size('small');
-    
-    > .labelvacation {
+  > .information{
+    margin: 0 0 28px;
+
+    > .label {
       @include font-size('small');
-      display: flex;
-      justify-content: center;
-      background: $second-color;
-      border-radius: 3px;
-      padding: 4px 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: block;
+    }
+
+    > .labelvacation {
       width: 60px;
-
-      > p {
-        color: $second-font-color;
-      }
+      padding: 4px 5px;
+      border-radius: 3px;
+      margin-bottom: 5px;
+      background: $second-color;
+      text-align: center;
+      text-transform: initial;
+      color: $second-font-color;
     }
-  }
 
-  > .informationlabel {    
-    @include font-size('medium');
-    margin: 3px 0;
-
-    > p {
+    > .informationtext {
+      @include font-size('medium');
       color: $thirdth-font-color;
+      overflow-wrap: break-word;
+      margin: 3px 0;
+    }
+      
+    > .calendaricon {
+      @include size(15px);
+      color: $thirdth-font-color;
+      display: inline-block;
     }
   }
-
+    
 }
 
 @include respond-to('medium') {

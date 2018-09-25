@@ -2,22 +2,20 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  .-light { font-weight: none; }
-  .-bold { font-weight: bold; }
-  .-upper { text-transform: uppercase; }
 
   > .presentation {
     text-align: center;
 
     > .messagebox {
       @include font-size("s-medium");
+      color: #fff;
+      text-transform: uppercase;    
+      font-weight: bold;
       display: inline-block;
       position: relative;
       margin: 20px auto;
-      color: #fff;
-      font-weight: bold;
       padding: 8px 30px;
-      background-color: #e8676b;      
+      background-color: #e8676b;  
     }
 
     > .messagebox::before { 
@@ -36,6 +34,9 @@
       > .title {
         @include font-size('x-huge');
       }
+      > .name {
+        font-weight: bold;
+      }
       > .observation {
         @include font-size('large');
         margin: 4px 0;
@@ -45,6 +46,7 @@
 
 
   > .line {
+    border-top: none;
     border-bottom: 1px solid #dedede;
     margin: 20px 0;
     width: 100%;
