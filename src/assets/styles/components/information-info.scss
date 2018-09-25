@@ -1,0 +1,48 @@
+.information-info {
+  margin: 0 0 28px;
+  
+  > .label {
+    @include font-size('small');
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+
+    &.-detailhighlight { text-transform: initial; margin-bottom: 5px; }
+
+    > .textvacation {
+      display: inline-block;
+      padding: 4px 10px;
+      background: $second-color;
+      border-radius: 3px;
+      color: $second-font-color;
+    }
+  }
+
+  > .informationtext {
+    @include font-size('medium');
+    color: $thirdth-font-color;
+    overflow-wrap: break-word;
+    margin: 3px 0;
+  }
+    
+  > .calendaricon {
+    @include size(15px);
+    color: $thirdth-font-color;
+    display: inline-block;
+  }
+}
+
+@include respond-to('medium') {
+  .information-info { 
+    margin: 10px 0px;
+    
+    > .label {
+      width: 28%;
+      display: inline-block;
+    }
+
+    > .informationlabel {    
+      margin: 0;
+    }
+  }
+}

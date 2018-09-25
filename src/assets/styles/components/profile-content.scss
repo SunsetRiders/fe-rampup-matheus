@@ -1,0 +1,28 @@
+.profile-content {
+  padding: 30px;
+
+  > .secondcolumn {
+
+    > .line {
+      border-top: none;
+      border-bottom: 1px solid #dedede;
+      margin: 20px 0;
+    }
+  }
+}
+
+@include respond-to('medium') {
+  .profile-content {
+    display: flex;
+    
+    > .firstcolumn {
+      flex: 2;
+    }
+    
+    > .secondcolumn {
+      flex: 3;
+      padding-left: 5%; 
+
+    } 
+  }
+}

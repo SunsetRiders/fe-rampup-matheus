@@ -1,0 +1,27 @@
+.footer-detail {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: $second-color;
+  padding: 16px 0;
+  > a {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 15px;
+    
+    > .logo {
+      object-fit: contain;
+      @include size(18px);
+    }
+  }
+  > a:hover {
+    border-radius: 50%; 
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@include respond-to('medium') {
+  .footer-detail {
+    padding: 25px 0;
+  }
+}

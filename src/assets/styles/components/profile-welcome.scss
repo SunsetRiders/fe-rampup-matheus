@@ -1,0 +1,57 @@
+.profile-welcome {
+  text-align: center;
+
+  > .messagebox {
+    @include font-size("s-medium");
+    color: #fff;
+    text-transform: uppercase;    
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    margin: 20px auto;
+    padding: 8px 30px;
+    background-color: #e8676b;  
+  }
+
+  > .messagebox::before { 
+    content: '';
+    position: absolute;
+    border: 5px solid;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-top-color: #e8676b;
+    border-left-color: #e8676b;
+    top: 100%;
+    left: 5%;
+  }
+
+  > .title {
+    @include font-size('x-huge');
+    font-weight: 400;
+
+    > .name {
+      font-weight: bold;
+    }
+  }
+
+  > .observation {
+    @include font-size('large');
+    margin: 4px 0;
+  }
+
+} 
+
+@include respond-to('medium') {
+  .profile-welcome {
+    text-align: initial;
+
+    > .messagebox {
+      padding: 8px 5%;
+      margin: 0 0 25px 0;
+    }
+      
+    > .observation {
+      margin: 0;
+    }
+  }
+}
