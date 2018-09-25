@@ -2,21 +2,27 @@
   padding: 30px;
 
   > .secondcolumn {
-    width: 100%;
-  }  
+
+    > .line {
+      border-top: none;
+      border-bottom: 1px solid #dedede;
+      margin: 20px 0;
+    }
+  }
 }
 
 @include respond-to('medium') {
   .profile-content {
     display: flex;
-    flex-direction: row;
     
     > .firstcolumn {
-      margin: 0 5% 0 0;
+      flex: 2;
     }
-
+    
     > .secondcolumn {
-      width: 70%;
+      flex: 3;
+      padding-left: 5%; 
+
     } 
   }
 }
