@@ -1,7 +1,4 @@
 .profile-welcome {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 
   > .presentation {
     text-align: center;
@@ -31,12 +28,16 @@
     }
 
     > .text {
+      
       > .title {
         @include font-size('x-huge');
+        font-weight: normal;
+
+        > .name {
+          font-weight: bold;
+        }
       }
-      > .name {
-        font-weight: bold;
-      }
+
       > .observation {
         @include font-size('large');
         margin: 4px 0;
@@ -44,25 +45,27 @@
     }
   }
 
-
   > .line {
     border-top: none;
     border-bottom: 1px solid #dedede;
     margin: 20px 0;
-    width: 100%;
   }
 } 
 
 @include respond-to('medium') {
   .profile-welcome {
-    align-items: flex-start;
-  
-    > .messagebox {
-      padding: 8px 5%;
-      margin: 0 0 30px 0;
+    
+    > .presentation {
+      text-align: initial;
+
+      > .messagebox {
+        padding: 8px 5%;
+        margin: 0 0 25px 0;
+      }
     }
+    
     > .text {
-      flex-wrap: nowrap;
+      
       > .observation {
         margin: 0;
       }
