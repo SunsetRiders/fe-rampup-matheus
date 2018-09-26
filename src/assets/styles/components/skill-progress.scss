@@ -1,0 +1,59 @@
+.skill-progress {
+  margin-top: 30px;
+
+  > .title {
+    @include font-size("s-medium");        
+  }
+
+  > .progress {
+    margin-top: 5px;
+    @include size(100%, 5px);
+    position: relative;
+    background-color: #ffe0e0;
+    border-radius: 5px;
+    
+    > .progressbar {
+      background-color: $second-color;
+      border-radius: 5px;
+      opacity: 1;
+      
+      &.-angular {
+        @include size($angular-width, 5px);
+      }
+      
+      &.-html {
+        @include size($html-width, 5px);
+      }
+      
+      &.-php {
+        @include size($php-width, 5px);
+      }
+      
+      &.-vuejs {
+        @include size($vuejs-width, 5px);
+      }
+      
+      &.-postgresql {
+        @include size($postgresql-width, 5px);
+      }
+
+      &.-jquery {
+        @include size($jquery-width, 5px);
+      }
+    }
+  }
+
+  // > .progress::after {
+  //   @include size(200px, 5px);
+  //   content: '';
+  //   position: absolute;
+  //   background-color: $second-color;
+  //   border-radius: 5px;
+  //   opacity: 0.5;
+  // }
+}
+
+.skill-progress:first-child {
+  @include font-size("s-medium");
+  margin-top: 0;
+}

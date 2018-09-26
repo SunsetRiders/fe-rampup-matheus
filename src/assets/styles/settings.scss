@@ -5,6 +5,13 @@ $body-min-width: 320px;
 $page-max-width: 930px;
 $logo-size: 35px;
 $image-max-width: 390px;
+$padding-content-box: 30px;
+$angular-width: 30%;
+$html-width: 60%;
+$php-width: 85%;
+$vuejs-width: 50%;
+$postgresql-width: 80%;
+$jquery-width: 70%;
 
 // Background colors
 $main-color: #efefef;
@@ -21,6 +28,7 @@ $font-sizes: (
   'medium': 15px,
   'large': 18px,
   'huge': 26px,
+  'title-section': 30px,
   'x-huge': 36px,
 );
 
