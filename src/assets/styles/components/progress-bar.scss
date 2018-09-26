@@ -1,0 +1,37 @@
+.progress-bar {
+  @include size(100%, $bar-height);
+  margin-top: 5px;
+  position: relative;
+  border-radius: $bar-border-radius;
+  background-color: #ffe0e0;
+  
+  > .progressbar {
+    border-radius: $bar-border-radius;
+    background-color: $second-color;
+    opacity: 1;
+    
+    &.-angular {
+      @include size($angular-width, $bar-height);
+    }
+    
+    &.-html {
+      @include size($html-width, $bar-height);
+    }
+    
+    &.-php {
+      @include size($php-width, $bar-height);
+    }
+    
+    &.-vuejs {
+      @include size($vuejs-width, $bar-height);
+    }
+    
+    &.-postgresql {
+      @include size($postgresql-width, $bar-height);
+    }
+
+    &.-jquery {
+      @include size($jquery-width, $bar-height);
+    }
+  }
+}
