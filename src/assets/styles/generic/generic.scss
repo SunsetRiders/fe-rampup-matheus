@@ -2,10 +2,10 @@ body {
   min-width: $body-min-width;
   margin: 0px;
   padding: 8px;
+  color: $font-color;
 }
 
 h1, p, span {
-  color: $font-color;
   margin: 0;
   padding: 0;
 }

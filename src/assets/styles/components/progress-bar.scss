@@ -1,7 +1,5 @@
 .progress-bar {
-  @include size(100%, $bar-height);
-  margin-top: 5px;
-  position: relative;
+  @include size(100%, $bar-height);  
   border-radius: $bar-border-radius;
   background-color: #ffe0e0;
   
