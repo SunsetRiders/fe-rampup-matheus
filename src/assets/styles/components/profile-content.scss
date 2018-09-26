@@ -1,5 +1,4 @@
 .profile-content {
-  padding: $padding-content-box;
 
   > .secondcolumn {
 
@@ -21,8 +20,7 @@
     
     > .secondcolumn {
       flex: 3;
-      padding-left: 5%; 
-
+      margin-left: 5%; 
     } 
   }
 }
