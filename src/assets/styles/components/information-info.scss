@@ -23,6 +23,7 @@
     color: $thirdth-font-color;
     overflow-wrap: break-word;
     margin: 3px 0;
+    display: inline-block;
   }
     
   > .calendaricon {
@@ -33,16 +34,17 @@
 }
 
 @include respond-to('medium') {
-  .information-info { 
+  .information-info {
+    display: flex;
+    align-items: center;
     margin: 10px 0px;
     
     > .label {
-      width: 28%;
-      display: inline-block;
+      flex: 0 0 110px;
     }
 
-    > .informationlabel {    
-      margin: 0;
+    > .calendaricon {
+      margin-right: 5px;
     }
   }
 }

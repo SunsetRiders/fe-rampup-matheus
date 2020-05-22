@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+// sizes.
+$body-min-width: 320px;
+$page-max-width: 930px;
+$logo-size: 35px;
+$image-max-width: 390px;
+$angular-width: 30%;
+$html-width: 60%;
+$php-width: 85%;
+$vuejs-width: 50%;
+$postgresql-width: 70%;
+$jquery-width: 70%;
+$bar-height: 5px;
+$bar-border-radius: 5px;
+
+// Margins
+$skil-progress-margin: 15px;
+
+// Background colors
+$main-color: #efefef;
+$second-color: #e8676b;
+
+// Font Styles
+$font-family: "Open Sans", sans-serif;
+$font-color: #3d4451;
+$second-font-color: #fff;
+$thirdth-font-color: #9da0a7;
+$font-sizes: (
+  'small': 12px,
+  's-medium': 14px,
+  'medium': 15px,
+  'large': 18px,
+  'huge': 26px,
+  'title-section': 30px,
+  'x-huge': 36px,
+);
+
+// breakpoints
+$breakpoints: (
+  'medium': (min-width: 768px),
+  'large': (min-width: 1000px),
+  'huge': (min-width: 1200px),
+);

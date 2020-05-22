@@ -1,0 +1,15 @@
+.skill-progress {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$skil-progress-margin;
+
+  > .skills {
+    flex: 1 0 200px;
+    margin: $skil-progress-margin;
+
+    > .title {
+      @include font-size("s-medium");        
+      margin-bottom: 5px;
+    }
+  }
+}
